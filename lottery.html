@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottery Number Challenge</title>
+  <link rel="stylesheet" href="lottery.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎲 Lottery Number Challenge 🎰</h1>
+    <p class="subtitle">Test your luck and see if you can match the lucky number!</p>
+    <form id="userForm">
+      <label for="name">🎭 Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="amount">💰 Amount in Rs (min:100rs):</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter an amount" required>
+      
+      <label for="userNumber">🎯 Your Lucky Number:</label>
+      <input type="number" id="userNumber" name="userNumber" min="10" max="99" placeholder="Enter a two-digit number" required>
+      
+      <button type="button" id="compareBtn">💎 Spin the Wheel!</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="lottery.js"></script>
+</body>
+</html>
